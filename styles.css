@@ -1,34 +1,93 @@
-.header {
-    color: darkblue;
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-.body {
+header {
     text-align: center;
+    padding: 20px 0;
+    background-color: #1e3a8a; /* Dark blue background */
+    color: white;
+    border-bottom: 4px solid #f9fafb; /* Light border at the bottom */
 }
 
-ul {
-    list-style-position: inside; /* Keeps bullets next to the text */
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 20px;
 }
 
-ul li::before {
-    font-weight: bold; 
+h1.header {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2, h3 {
+    color: #1e3a8a;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul.skills-list {
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+ul.skills-list li {
+    margin-bottom: 10px;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+ul.no-bullets li {
+    margin-bottom: 10px;
+}
+
+ul.no-bullets li a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul.no-bullets li a:hover {
+    color: #2563eb;
 }
 
 strong {
     font-weight: bold;
 }
 
-ul.no-bullets {
-    list-style-type: none; /* Removes default bullets */
-    padding-left: 0; /* Removes any padding */
-    text-align: center; /* Keeps text centered */
-}
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
 
-ul.no-bullets li {
-    margin: 5px 0; /* Adds some spacing between items */
-}
+    h1.header {
+        font-size: 2em;
+    }
 
-ul.no-bullets li::before {
-    content: '🔹'; /* Adds the symbol before each list item */
-    margin-right: 8px; /* Adds a little space between the symbol and the text */
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
 }
