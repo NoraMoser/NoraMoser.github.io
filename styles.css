@@ -1,7 +1,45 @@
 .header {
-    color: pink;
+    color: darkblue;
 }
 
 .body {
     text-align: center;
+}
+
+ul {
+    list-style-position: inside; /* Keeps bullets next to the text */
+    text-align: center; /* Centers the text */
+    padding: 0; /* Removes extra spacing */
+}
+
+ul li {
+    display: inline-block; /* Makes list items behave like inline elements */
+    text-align: left; /* Aligns text properly inside the block */
+    width: fit-content; /* Adjusts width to fit content */
+    margin: 5px 0; /* Adds some spacing between items */
+}
+
+ul li::before {
+    font-weight: bold; /* Makes the first part bold */
+}
+
+strong {
+    font-weight: bold;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Removes default bullets */
+    padding-left: 0; /* Removes any padding */
+    text-align: center; /* Keeps text centered */
+}
+
+ul.no-bullets li {
+    display: inline-block; /* Keeps items on the same line */
+    text-align: left; /* Aligns the content left within each item */
+    margin: 5px 0; /* Adds some spacing between items */
+}
+
+ul.no-bullets li::before {
+    content: '🔹'; /* Adds the symbol before each list item */
+    margin-right: 8px; /* Adds a little space between the symbol and the text */
 }
