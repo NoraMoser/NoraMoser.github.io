@@ -8,19 +8,10 @@
 
 ul {
     list-style-position: inside; /* Keeps bullets next to the text */
-    text-align: center; /* Centers the text */
-    padding: 0; /* Removes extra spacing */
-}
-
-ul li {
-    display: inline-block; /* Makes list items behave like inline elements */
-    text-align: left; /* Aligns text properly inside the block */
-    width: fit-content; /* Adjusts width to fit content */
-    margin: 5px 0; /* Adds some spacing between items */
 }
 
 ul li::before {
-    font-weight: bold; /* Makes the first part bold */
+    font-weight: bold; 
 }
 
 strong {
