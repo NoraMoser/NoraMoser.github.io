@@ -25,7 +25,6 @@ ul.no-bullets {
 }
 
 ul.no-bullets li {
-    display: inline-block; /* Keeps items on the same line */
     text-align: left; /* Aligns the content left within each item */
     margin: 5px 0; /* Adds some spacing between items */
 }
